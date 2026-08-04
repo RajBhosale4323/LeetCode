@@ -6,7 +6,7 @@ class Solution(object):
         l=0
         for i in range(len(s)):
             if s[i] in a and l<=a[s[i]]:
-                l = a[s[i]] +1
+                l = a[s[i]]+1
             a[s[i]] = i
             m = max(m, i-l+1)
         return m
