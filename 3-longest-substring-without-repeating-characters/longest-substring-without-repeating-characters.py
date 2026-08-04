@@ -5,8 +5,11 @@ class Solution(object):
         m = 0
         l=0
         for i in range(len(s)):
-            if s[i] in a and l<=a[s[i]]:
-                l = a[s[i]]+1
-            a[s[i]] = i
-            m = max(m, i-l+1)
+            let = s[i]
+            if let in a and l<=a[let]:
+                l = a[let]+1
+            a[let] = i
+            c = i-l+1
+            if c > m:
+                m = c
         return m
