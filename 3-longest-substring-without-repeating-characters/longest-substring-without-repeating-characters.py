@@ -1,24 +1,5 @@
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        # output = []
-        # op = ""
-        # n = 0
-        # while n < len(s):  
-        #     if s[n] in op:
-        #         output.append(op)
-        #         n = n - len(op) + 1
-        #         op = ""
-        #         op = op + s[n]
-        #     else:
-        #         op = op + s[n]
-        #     n += 1
-        # output.append(op)
-        # try:
-        #     ans = max(output, key=len)
-        # except ValueError:
-        #     return 0
-        # else:
-        #     return len(ans)
         i=0
         op = []
         m = 0
