@@ -6,7 +6,7 @@ class Solution(object):
         t1=0
         t2=0
         ans=[]
-        for i in range(t+1):
+        while t1<l1 and t2<l2:
             if t1==l1 or t2==l2:
                 break
             if nums1[t1] < nums2[t2]:
