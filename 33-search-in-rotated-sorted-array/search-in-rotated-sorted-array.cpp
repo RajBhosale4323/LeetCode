@@ -1,7 +1,6 @@
 class Solution {
 public:
     int ans(vector<int>& nums, int target, int low, int high) {
-        cout << low << high << endl;
         if (low>high) {
             return -1;
         }
