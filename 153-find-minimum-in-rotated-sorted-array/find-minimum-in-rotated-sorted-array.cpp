@@ -5,10 +5,7 @@ public:
         if (nums[low] < nums[high]) return nums[low];
 
         int mid = high - (high - low) / 2;
-        if (nums[low] == nums[mid] && nums[mid] == nums[high])
-            return ans(nums, low + 1, high - 1);
-
-        if (nums[low] <= nums[mid]) {
+        if (nums[low] < nums[mid]) {
             return min(nums[low], ans(nums, mid + 1, high));
         }
         else {
