@@ -5,6 +5,8 @@ public:
             if (low>high) return nums[high];
             return nums[low];
         }
+        if (nums[low] <= nums[high])
+            return nums[low];
 
         int mid = high - (high - low)/2;
         if (nums[low]<nums[mid]) {
