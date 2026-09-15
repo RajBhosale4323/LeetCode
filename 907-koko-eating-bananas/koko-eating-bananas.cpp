@@ -8,7 +8,7 @@ public:
             int mid = low + (high-low)/2;
             long long hours = 0;
             for (int i=0;i<l;i++) {
-                hours += ceil((double)piles[i]/(double)mid);
+                hours += (piles[i] + mid - 1) / mid;
             }
             if (hours<=h)  high = mid-1;
             else low = mid+1;
