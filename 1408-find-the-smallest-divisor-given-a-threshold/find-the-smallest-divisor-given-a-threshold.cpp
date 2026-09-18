@@ -9,7 +9,7 @@ public:
             int mid = low + (high-low)/2;
             int s = 0;
             for (int i=0;i<l;i++) {
-                s += ceil((double)nums[i]/mid);
+                s += (nums[i] + mid-1)/mid;
             }
 
             if(s>threshold) low=mid+1;
