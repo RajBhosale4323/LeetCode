@@ -13,11 +13,9 @@ public:
 
         for (auto n:hash) {
             if (hash.find(n - 1) == hash.end()) {
-                int a = 1;
                 int cnt = 1;
-                while (hash.find(n + a) != hash.end()) {
+                while (hash.find(n + cnt) != hash.end()) {
                     cnt += 1;
-                    a += 1;
                 }
                 ans = max(ans, cnt);
             }
