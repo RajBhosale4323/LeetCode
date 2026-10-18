@@ -3,6 +3,7 @@ public:
     string removeOuterParentheses(string s) {
         int len = s.length();
         string ans = "";
+        ans.reserve(s.size());
         int cnt = 0;
 
         for (int i=0;i<len;i++) {
@@ -15,7 +16,6 @@ public:
                 cnt+=1;
             }
         }
-        ans.reserve(s.size());
         return ans;
     }
 };
