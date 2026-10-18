@@ -1,7 +1,7 @@
 class Solution {
 public:
     string removeOuterParentheses(string s) {
-        int len = s.length();
+        int len = s.size();
         string ans = "";
         ans.reserve(s.size());
         int cnt = 0;
