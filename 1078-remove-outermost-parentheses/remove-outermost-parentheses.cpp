@@ -15,6 +15,7 @@ public:
                 cnt+=1;
             }
         }
+        ans.reserve(s.size());
         return ans;
     }
 };
